@@ -1,0 +1,11 @@
+{
+  "name": "cooperative-society-backend",
+  "version": "1.0.0",
+  "description": "The backend architecture of the cooperative society website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oladele Tobiloba",
+  "license": "ISC"
+}
