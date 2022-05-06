@@ -1,0 +1,24 @@
+{
+  "name": "cooperative-society-webiste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "npm run start --prefix frontend",
+    "backend": "npm run start --prefix backend",
+    "watch": "npm run frontend & npm run backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/towbee98/Cooperative-Society-Website.git"
+  },
+  "author": "towbee98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/towbee98/Cooperative-Society-Website/issues"
+  },
+  "homepage": "https://github.com/towbee98/Cooperative-Society-Website#readme"
+}
