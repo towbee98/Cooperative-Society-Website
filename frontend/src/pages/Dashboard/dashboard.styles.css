@@ -1,0 +1,7 @@
+.dashboard {
+  margin: 85px 10px 5px 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: flex-start;
+  gap: 4px;
+}

@@ -9,6 +9,8 @@ import Home from "./pages/Home/home.component";
 import Modal from "./components/Modal/modal.component";
 import Member from "./pages/member/member.component";
 import SignUp from "./pages/SignUp/sign-up.component";
+import SignIn from "./pages/Sign In/sign-in.component";
+import Dashboard from "./pages/Dashboard/dashboard.component";
 
 const styles = {
   fadeIn: {
@@ -50,7 +52,8 @@ function App() {
             path="/register"
             element={<SignUp user={user} handleChange={handleChange} />}
           />
-          {/* <Route exact path="/register" element={<SignUp />} /> */}
+          <Route exact path="/login" element={<SignIn />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
         </Routes>
         <Footer />
       </div>

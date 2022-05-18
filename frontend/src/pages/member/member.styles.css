@@ -7,6 +7,9 @@
   align-items: flex-start;
 }
 
+a {
+  text-decoration: none;
+}
 .user-profile {
   width: 200px;
   margin: 20px 0;

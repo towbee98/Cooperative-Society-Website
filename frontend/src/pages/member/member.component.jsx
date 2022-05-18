@@ -2,6 +2,7 @@ import React from "react";
 import "./member.styles.css";
 import CustomButton from "../../components/custom-button/custom-button.component";
 import FormInput from "../../components/form-input/form-input.component";
+import { Link } from "react-router-dom";
 
 const Member = ({ user }) => {
   return (
@@ -65,9 +66,11 @@ const Member = ({ user }) => {
           <CustomButton>Edit</CustomButton>
         </div>
         <div className="financial-detail">
-          <CustomButton>
-            Click here to check your financial details
-          </CustomButton>
+          <Link to="/dashboard">
+            <CustomButton>
+              Click here to check your financial details
+            </CustomButton>
+          </Link>
         </div>
       </div>
       <div className="password-update">

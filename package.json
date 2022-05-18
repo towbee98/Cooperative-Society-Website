@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "npm run start --prefix frontend",
     "backend": "npm run start --prefix backend",
-    "watch": "npm run frontend & npm run backend"
+    "watch": "npm run frontend & npm run backend",
+    "install": "npm install --prefix frontend & npm install --backend"
   },
   "repository": {
     "type": "git",

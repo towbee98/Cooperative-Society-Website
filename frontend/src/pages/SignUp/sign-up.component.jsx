@@ -19,7 +19,7 @@ const SignUp = () => {
       >
         <CustomButton>DOWNLOAD MEMBERSHIP FORM</CustomButton>
       </Link>
-      <h2>Login Details</h2>
+      <h2>SignUp</h2>
       <form>
         <FormInput type="text" name={"name"} id={"name"} placeholder={"Name"} />
         <FormInput
@@ -52,10 +52,16 @@ const SignUp = () => {
           id={"password"}
           placeholder={"Password"}
         />
-        <CustomButton>Submit</CustomButton>
+        <CustomButton
+          onClick={() => {
+            // location.redirect("/login");
+          }}
+        >
+          Submit
+        </CustomButton>
       </form>
       <p>
-        Have an account already, <Link to="/login">Click here to login</Link>
+        Have an account already, <Link to="/login"> Click here to login</Link>
       </p>
     </div>
   );
