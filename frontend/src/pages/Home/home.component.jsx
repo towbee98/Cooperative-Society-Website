@@ -12,14 +12,14 @@ import Radium, { StyleRoot } from "radium";
 const styles = {
   zoomIn: {
     animation: "x 4s",
-    animationName: Radium.keyframes(zoomIn, "zoomIn"),
-  },
+    animationName: Radium.keyframes(zoomIn, "zoomIn")
+  }
 };
 
 const Home = () => {
   return (
     <StyleRoot>
-      <div className="Home">
+      <div className="Home" id="Home">
         <div className="Intro">
           <div className="Welcome" style={styles.zoomIn}>
             <div className="note">

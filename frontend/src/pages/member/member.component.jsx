@@ -66,7 +66,7 @@ const Member = ({ user }) => {
           <CustomButton>Edit</CustomButton>
         </div>
         <div className="financial-detail">
-          <Link to="/dashboard">
+          <Link to="/menu">
             <CustomButton>
               Click here to check your financial details
             </CustomButton>

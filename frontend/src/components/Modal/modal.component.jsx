@@ -8,8 +8,8 @@ import Radium, { StyleRoot } from "radium";
 const styles = {
   slideInDown: {
     animation: "x 2s",
-    animationName: Radium.keyframes(slideInDown, "slideInDown"),
-  },
+    animationName: Radium.keyframes(slideInDown, "slideInDown")
+  }
 };
 
 const Modal = ({ click, handleClick }) => {
@@ -18,9 +18,9 @@ const Modal = ({ click, handleClick }) => {
       <div className="modal" style={styles.slideInDown}>
         <ul className="modal-options">
           <li className="active">
-            <Link to="/" onClick={handleClick}>
+            <HashLink to="/#Home" onClick={handleClick}>
               Home
-            </Link>
+            </HashLink>
           </li>
           <li>
             <HashLink smooth to="/#Services" onClick={handleClick}>

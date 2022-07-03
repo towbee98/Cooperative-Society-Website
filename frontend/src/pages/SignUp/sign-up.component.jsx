@@ -15,8 +15,7 @@ const SignUp = () => {
       <Link
         to={"/membership-form.pdf"}
         target="_blank"
-        download="membership-form.pdf"
-      >
+        download="membership-form.pdf">
         <CustomButton>DOWNLOAD MEMBERSHIP FORM</CustomButton>
       </Link>
       <h2>SignUp</h2>
@@ -55,8 +54,7 @@ const SignUp = () => {
         <CustomButton
           onClick={() => {
             // location.redirect("/login");
-          }}
-        >
+          }}>
           Submit
         </CustomButton>
       </form>

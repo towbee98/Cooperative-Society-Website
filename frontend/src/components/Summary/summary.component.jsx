@@ -1,36 +1,38 @@
 import React from "react";
+import { connect } from "react-redux";
 import "./summary.styles.css";
 import TransactionCard from "../transcation-card/transaction-card.component";
-const Summary = () => {
+const Summary = ({ data }) => {
+  console.log(data);
   return (
     <div className="summary-container">
       <h2>Welcome,{"Tobi"}</h2>
       <div className="summary-transactions-container">
-        <h4>Transactions</h4>
+        <h4>Overview</h4>
         <div className="summary-transactions">
           <div className="summary-holder">
             <TransactionCard
               type={"total-share"}
               name={"TOTAL SHARES"}
-              amount={180000}
+              amount={data["Shares Total"]}
             />
-            <TransactionCard type={"loan"} name={"LOAN"} amount={40000} />
+            <TransactionCard type={"loan"} name={"LOAN"} amount={data.Loan} />
             <TransactionCard
               type={"loan-balance"}
               name={"LOAN BALANCE"}
-              amount={30000}
+              amount={data["Loan Balance"]}
             />
             <TransactionCard
               type={"loan-interest"}
               name={"LOAN INTEREST"}
-              amount={8000}
+              amount={data["Loan Interest"]}
             />
           </div>
           <div className="total-savings-graph">
             <TransactionCard
               type={"total-savings"}
-              name={"TOTAL SAVINNGS"}
-              amount={120000}
+              name={"TOTAL SAVINGS"}
+              amount={data["Savings Total"]}
             />
             <div className="graph"></div>
           </div>
@@ -39,5 +41,8 @@ const Summary = () => {
     </div>
   );
 };
+const mapStateToProps = (state) => ({
+  data: state.data.mockData[0]
+});
 
-export default Summary;
+export default connect(mapStateToProps)(Summary);

@@ -10,7 +10,9 @@ const Header = ({ click, handleClick }) => {
       <nav>
         <ul className="options">
           <li className="active">
-            <Link to="/">Home</Link>
+            <HashLink smooth to="/#Home">
+              Home
+            </HashLink>
           </li>
           <li>
             <HashLink smooth to="/#Services">
@@ -33,8 +35,7 @@ const Header = ({ click, handleClick }) => {
         </ul>
         <div
           className={click ? `animate` : `hamburger-menu`}
-          onClick={handleClick}
-        >
+          onClick={handleClick}>
           <div className="line-1"></div>
           <div className="line-2"></div>
           <div className="line-3"></div>

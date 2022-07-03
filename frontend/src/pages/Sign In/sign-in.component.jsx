@@ -1,24 +1,26 @@
 import React from "react";
+//import { useNavigate } from "react-router-dom";
 import "./sign-in.styles.css";
 import FormInput from "../../components/form-input/form-input.component";
 import CustomButton from "../../components/custom-button/custom-button.component";
 
-const SignIn = () => {
+const SignIn = ({ header, type, placeholder, name, to }) => {
+  // const navigate = useNavigate();
   return (
     <div className="sign-in">
-      <h2>Login</h2>
+      <h2>{header}</h2>
       <form>
-        <FormInput
-          type={"text"}
-          name={"Username"}
-          placeholder={"Username/Member ID"}
-        />
+        <FormInput type={type} name={name} placeholder={placeholder} />
         <FormInput
           type={"password"}
           name={"password"}
           placeholder={"Password"}
         />
-        <CustomButton>Login</CustomButton>
+        {!to ? (
+          <CustomButton>Login</CustomButton>
+        ) : (
+          <CustomButton handleSubmit>Login</CustomButton>
+        )}
       </form>
     </div>
   );
