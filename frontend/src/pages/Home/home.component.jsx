@@ -8,6 +8,8 @@ import About from "../../components/About/about-component";
 import Contact from "../../components/Contact/contact.component";
 import { zoomIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
+// import images from "../../assets/galleryImages";
+import ImageSlider from "../../components/Gallery/gallery.component";
 
 const styles = {
   zoomIn: {
@@ -53,6 +55,7 @@ const Home = () => {
             })}
           </div>
         </div>
+        <ImageSlider />
         <div className="others">
           <About />
           <Contact />

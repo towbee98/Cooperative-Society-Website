@@ -22,8 +22,7 @@ const RecentTransactions = ({ data }) => {
               align="left"
               sx={{ fontWeight: "bolder" }}
               colSpan={15}
-              children={"Recent Transactions"}
-            />
+              children={"Recent Transactions"}></TableCell>
           </TableRow>
           <TableRow>
             {Columns.map((el, index) => {
