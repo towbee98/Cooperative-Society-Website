@@ -10,7 +10,8 @@
     "frontend": "npm run start --prefix frontend",
     "backend": "npm run start --prefix backend",
     "watch": "npm run frontend & npm run backend",
-    "install": "npm install --prefix frontend & npm install --prefix backend"
+    "install": "npm install --prefix frontend & npm install --prefix backend",
+    "pretty-quick": "npm run pretty-quick --prefix frontend"
   },
   "repository": {
     "type": "git",
